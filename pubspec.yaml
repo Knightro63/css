@@ -1,0 +1,47 @@
+name: css
+description: A new Flutter package project.
+version: 0.0.1
+homepage:
+publish_to: none
+
+environment:
+  sdk: '>=2.18.6 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # fonts:
+  #   - family: MuseoSans lite
+  #     fonts:
+  #       - asset: fonts/MuseoSans-300.otf
+  #         weight: 300
+  #   - family: MuseoSans
+  #     fonts:
+  #       - asset: fonts/MuseoSans_500.otf
+  #         weight: 500
+  #   - family: MuseoSans Bold
+  #     fonts:
+  #       - asset: fonts/MuseoSans_700.otf
+  #         weight: 700
+  #   - family: Klavika
+  #     fonts:
+  #       - asset: fonts/Klavika-Regular.otf
+  #   - family: Klavika Bold
+  #     fonts:
+  #       - asset: fonts/Klavika-Bold.otf
+  #   - family:  MyFlutterApp
+  #     fonts:
+  #      - asset: fonts/MyFlutterApp.ttf
+
