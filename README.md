@@ -1,39 +1,26 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# css
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+A Flutter plugin to for lsi themes for lsi apps.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To get started with css add the package to your pubspec.yaml file.
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
+### Generate responsive width or height
+Generates a width or height to be a specifice size inside the widget. You can change the size by changing the smallest or largest the width can be in the responsive with function. 
 ```dart
-const like = 'sample';
+double width = CSS.responsve({double? width, double smallest = 650, int total = 1});
+double height = CSS.responsiveHeight();
 ```
 
-## Additional information
+### Darken or Lighten color
+Darken or Lighten a color by using these two functions.
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+Color darkenColor = darken(color, [double amount = .1]);
+Color lightenColor = lighten(color, [double amount = .1]);
+```
+
+## Contributing
+
+Feel free to propose changes by creating a pull request.
