@@ -160,7 +160,16 @@ class CSS{
       ),
     )
   );
+  static Color responsiveColor(Color color, [double amount = .1]){
+    if(amount > 1){
+      amount = 1;
+    }
+    else if(amount < 0){
+      amount = 0;
+    }
 
+    color.computeLuminance() > 0.5?darken(color, amount):lighten(color, amount);
+  }
   static Color darken(Color color, [double amount = .1]) {
     if(amount > 1){
       amount = 1;
