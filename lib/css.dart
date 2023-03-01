@@ -168,7 +168,7 @@ class CSS{
       amount = 0;
     }
 
-    color.computeLuminance() > 0.5?darken(color, amount):lighten(color, amount);
+    return color.computeLuminance() > 0.5?darken(color, amount):lighten(color, amount);
   }
   static Color darken(Color color, [double amount = .1]) {
     if(amount > 1){
