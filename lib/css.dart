@@ -27,7 +27,7 @@ const Color darkGreenT = Color(0x7739ac50);
 const Color lightGreenT = Color(0x9953d16c);
 const Color lightBlueT = Color(0x9906A7E2);
 
-TextStyle iconStlye = const TextStyle(fontSize: 8, fontFamily: 'MuseoSans Bold');
+TextStyle iconStlye = const TextStyle(fontSize: 8, fontFamily: 'MuseoSans Bold',package: 'css',);
 
 class CSS{
   static ThemeData darkTheme = ThemeData(
@@ -45,24 +45,28 @@ class CSS{
     scrollbarTheme: const ScrollbarThemeData(isAlwaysShown: true, showTrackOnHover: true),
     primaryTextTheme: const TextTheme(
       headline1: TextStyle(
+        package: 'css',
         color: lightBlue,
         fontFamily: 'Klavika Bold',
         fontSize: 36,
         decoration: TextDecoration.none
       ),
       headline2: TextStyle(
+        package: 'css',
         color: lightBlue,
         fontFamily: 'Klavika Bold',
         fontSize: 30,
         decoration: TextDecoration.none
       ),
       headline3: TextStyle(
+        package: 'css',
         color: lightBlue,
         fontFamily: 'Klavika Bold',
         fontSize: 24,
         decoration: TextDecoration.none
       ),
       headline4: TextStyle(
+        package: 'css',
         color: lightBlue,
         fontFamily: 'Klavika Bold',
         fontSize: 18,
@@ -70,18 +74,21 @@ class CSS{
       ),
 
       bodyText1: TextStyle(
+        package: 'css',
         color: lightGrey,
         fontFamily: 'Klavika Bold',
         fontSize: 24,
         decoration: TextDecoration.none
       ),
       bodyText2: TextStyle(
+        package: 'css',
         color: lightGrey,
         fontFamily: 'Klavika',
         fontSize: 18,
         decoration: TextDecoration.none
       ),
       subtitle1: TextStyle(
+        package: 'css',
         height: 1.5,
         color: lightGrey,
         fontFamily: 'MuesoSans Bold',
@@ -89,6 +96,7 @@ class CSS{
         decoration: TextDecoration.none
       ),
       subtitle2: TextStyle(
+        package: 'css',
         color: lightGrey,
         fontFamily: 'MuesoSans Bold',
         fontSize: 10,
@@ -111,48 +119,56 @@ class CSS{
     selectedRowColor: darkGrey,
     primaryTextTheme: TextTheme(
       headline1: const TextStyle(
+        package: 'css',
         color: darkBlue,
         fontFamily: 'Klavika Bold',
         fontSize: 36,
         decoration: TextDecoration.none
       ),
       headline2: const TextStyle(
+        package: 'css',
         color: darkBlue,
         fontFamily: 'Klavika Bold',
         fontSize: 30,
         decoration: TextDecoration.none
       ),
       headline3: const TextStyle(
+        package: 'css',
         color: darkBlue,
         fontFamily: 'Klavika Bold',
         fontSize: 24,
         decoration: TextDecoration.none
       ),
       headline4: const TextStyle(
+        package: 'css',
         color: darkBlue,
         fontFamily: 'Klavika Bold',
         fontSize: 18,
         decoration: TextDecoration.none
       ),
       bodyText1: TextStyle(
+        package: 'css',
         color: Colors.grey[900],
         fontFamily: 'Klavika',
         fontSize: 24,
         decoration: TextDecoration.none
       ),
       bodyText2: TextStyle(
+        package: 'css',
         color: Colors.grey[900],
         fontFamily: 'Klavika',
         fontSize: 18,
         decoration: TextDecoration.none
       ),
       subtitle1: TextStyle(
+        package: 'css',
         color: Colors.grey[900],
         fontFamily: 'MuesoSans Bold',
         fontSize: 12,
         decoration: TextDecoration.none
       ),
       subtitle2: TextStyle(
+        package: 'css',
         color: Colors.grey[900],
         fontFamily: 'MuesoSans Bold',
         fontSize: 10,
