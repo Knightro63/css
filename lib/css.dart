@@ -33,7 +33,6 @@ class CSS{
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
     primaryColor: darkBlue,
-    accentColor: lightBlue,
     cardColor: Colors.grey[850],
     canvasColor: Colors.grey[900],
     splashColor: Colors.grey[900],
@@ -109,7 +108,7 @@ class CSS{
   static ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
     primaryColor: lightBlue,
-    accentColor: lightBlue,
+    secondaryHeaderColor: lightBlue,
     cardColor: const Color(0xfffdfdfd),
     canvasColor: const Color(0xffdddddd),
     splashColor: const Color(0xfff3f3f3),
