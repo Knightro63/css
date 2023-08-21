@@ -28,7 +28,78 @@ const Color lightGreenT = Color(0x9953d16c);
 const Color lightBlueT = Color(0x9906A7E2);
 
 TextStyle iconStlye = const TextStyle(fontSize: 8, fontFamily: 'MuseoSans Bold',package: 'css',);
+// ThemeData ThemeData({
+//   bool? applyElevationOverlayColor,
+//   NoDefaultCupertinoThemeData? cupertinoOverrideTheme,
+//   Iterable<ThemeExtension<dynamic>>? extensions,
+//   InputDecorationTheme? inputDecorationTheme,
+//   MaterialTapTargetSize? materialTapTargetSize,
+//   PageTransitionsTheme? pageTransitionsTheme,
+//   TargetPlatform? platform,
+//   ScrollbarThemeData? scrollbarTheme,
+//   InteractiveInkFeatureFactory? splashFactory,
+//   bool? useMaterial3,
+//   VisualDensity? visualDensity,
 
+//   ColorScheme? colorScheme,
+//   MaterialColor? primarySwatch,
+
+//   String? fontFamily,
+//   List<String>? fontFamilyFallback,
+//   String? package,
+//   IconThemeData? iconTheme,
+//   IconThemeData? primaryIconTheme,
+//   TextTheme? primaryTextTheme,
+//   TextTheme? textTheme,
+//   Typography? typography,
+//   ActionIconThemeData? actionIconTheme,
+//   AppBarTheme? appBarTheme,
+//   BadgeThemeData? badgeTheme,
+//   MaterialBannerThemeData? bannerTheme,
+//   BottomAppBarTheme? bottomAppBarTheme,
+//   BottomNavigationBarThemeData? bottomNavigationBarTheme,
+//   BottomSheetThemeData? bottomSheetTheme,
+//   ButtonBarThemeData? buttonBarTheme,
+//   ButtonThemeData? buttonTheme,
+//   CardTheme? cardTheme,
+//   CheckboxThemeData? checkboxTheme,
+//   ChipThemeData? chipTheme,
+//   DataTableThemeData? dataTableTheme,
+//   DatePickerThemeData? datePickerTheme,
+//   DialogTheme? dialogTheme,
+//   DividerThemeData? dividerTheme,
+//   DrawerThemeData? drawerTheme,
+//   DropdownMenuThemeData? dropdownMenuTheme,
+//   ElevatedButtonThemeData? elevatedButtonTheme,
+//   ExpansionTileThemeData? expansionTileTheme,
+//   FilledButtonThemeData? filledButtonTheme,
+//   FloatingActionButtonThemeData? floatingActionButtonTheme,
+//   IconButtonThemeData? iconButtonTheme,
+//   ListTileThemeData? listTileTheme,
+//   MenuBarThemeData? menuBarTheme,
+//   MenuButtonThemeData? menuButtonTheme,
+//   MenuThemeData? menuTheme,
+//   NavigationBarThemeData? navigationBarTheme,
+//   NavigationDrawerThemeData? navigationDrawerTheme,
+//   NavigationRailThemeData? navigationRailTheme,
+//   OutlinedButtonThemeData? outlinedButtonTheme,
+//   PopupMenuThemeData? popupMenuTheme,
+//   ProgressIndicatorThemeData? progressIndicatorTheme,
+//   RadioThemeData? radioTheme,
+//   SearchBarThemeData? searchBarTheme,
+//   SearchViewThemeData? searchViewTheme,
+//   SegmentedButtonThemeData? segmentedButtonTheme,
+//   SliderThemeData? sliderTheme,
+//   SnackBarThemeData? snackBarTheme,
+//   SwitchThemeData? switchTheme,
+//   TabBarTheme? tabBarTheme,
+//   TextButtonThemeData? textButtonTheme,
+//   TextSelectionThemeData? textSelectionTheme,
+//   TimePickerThemeData? timePickerTheme,
+//   ToggleButtonsThemeData? toggleButtonsTheme,
+//   TooltipThemeData? tooltipTheme,
+//   AndroidOverscrollIndicator? androidOverscrollIndicator,
+// })
 class CSS{
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
@@ -40,67 +111,106 @@ class CSS{
     shadowColor: Colors.black,//Colors.grey[750],
     indicatorColor: Colors.grey[850],
     secondaryHeaderColor: lightBlue,
-    selectedRowColor: Colors.grey[800],
-    scrollbarTheme: const ScrollbarThemeData(isAlwaysShown: true, showTrackOnHover: true),
-    primaryTextTheme: const TextTheme(
-      headline1: TextStyle(
-        package: 'css',
-        color: lightBlue,
-        fontFamily: 'Klavika Bold',
-        fontSize: 36,
-        decoration: TextDecoration.none
-      ),
-      headline2: TextStyle(
-        package: 'css',
-        color: lightBlue,
-        fontFamily: 'Klavika Bold',
-        fontSize: 30,
-        decoration: TextDecoration.none
-      ),
-      headline3: TextStyle(
-        package: 'css',
-        color: lightBlue,
-        fontFamily: 'Klavika Bold',
-        fontSize: 24,
-        decoration: TextDecoration.none
-      ),
-      headline4: TextStyle(
-        package: 'css',
-        color: lightBlue,
-        fontFamily: 'Klavika Bold',
-        fontSize: 18,
-        decoration: TextDecoration.none
-      ),
+    primaryColorLight: Colors.white,
+    unselectedWidgetColor: Colors.grey[800],
 
-      bodyText1: TextStyle(
-        package: 'css',
-        color: lightGrey,
-        fontFamily: 'Klavika Bold',
-        fontSize: 24,
-        decoration: TextDecoration.none
-      ),
-      bodyText2: TextStyle(
-        package: 'css',
-        color: lightGrey,
-        fontFamily: 'Klavika',
-        fontSize: 18,
-        decoration: TextDecoration.none
-      ),
-      subtitle1: TextStyle(
+    // colorScheme: ColorScheme(
+    //   brightness: Brightness.dark, 
+    //   primary: primary, 
+    //   onPrimary: onPrimary, 
+    //   secondary: secondary, 
+    //   onSecondary: onSecondary, 
+    //   error: error, 
+    //   onError: onError, 
+    //   background: background, 
+    //   onBackground: onBackground, 
+    //   surface: surface, 
+    //   onSurface: onSurface
+    // ),
+
+    // colorSchemeSeed: ,
+    // dialogBackgroundColor: ,
+    // scaffoldBackgroundColor: ,
+    // disabledColor: ,
+    // focusColor: ,
+
+    dividerColor: lightGrey,
+    highlightColor: lightBlue,
+    hintColor: darkBlue,
+    primaryColorDark: Colors.grey[900],
+
+    scrollbarTheme: const ScrollbarThemeData(),
+    primaryTextTheme: const TextTheme(
+      titleLarge: TextStyle(
         package: 'css',
         height: 1.5,
+        color: lightGrey,
+        fontFamily: 'MuesoSans Bold',
+        fontSize: 16,
+        decoration: TextDecoration.none
+      ),
+      titleMedium: TextStyle(
+        package: 'css',
         color: lightGrey,
         fontFamily: 'MuesoSans Bold',
         fontSize: 12,
         decoration: TextDecoration.none
       ),
-      subtitle2: TextStyle(
+      titleSmall: TextStyle(
         package: 'css',
         color: lightGrey,
         fontFamily: 'MuesoSans Bold',
         fontSize: 10,
         decoration: TextDecoration.none
       ),
+      headlineLarge: TextStyle(
+        package: 'css',
+        color: lightBlue,
+        fontFamily: 'Klavika Bold',
+        fontSize: 36,
+        decoration: TextDecoration.none
+      ),
+      headlineMedium: TextStyle(
+        package: 'css',
+        color: lightBlue,
+        fontFamily: 'Klavika Bold',
+        fontSize: 24,
+        decoration: TextDecoration.none
+      ),
+      headlineSmall: TextStyle(
+        package: 'css',
+        color: lightBlue,
+        fontFamily: 'Klavika Bold',
+        fontSize: 18,
+        decoration: TextDecoration.none
+      ),
+      bodyLarge: TextStyle(
+        package: 'css',
+        color: lightGrey,
+        fontFamily: 'Klavika Bold',
+        fontSize: 24,
+        decoration: TextDecoration.none
+      ),
+      bodyMedium: TextStyle(
+        package: 'css',
+        color: lightGrey,
+        fontFamily: 'Klavika Bold',
+        fontSize: 18,
+        decoration: TextDecoration.none
+      ),
+      bodySmall: TextStyle(
+        package: 'css',
+        color: lightGrey,
+        fontFamily: 'Klavika Bold',
+        fontSize: 12,
+        decoration: TextDecoration.none
+      ),
+      // displayLarge: ,
+      // displayMedium: ,
+      // displaySmall: ,
+      // labelLarge: ,
+      // labelMedium: ,
+      // labelSmall: ,
     )
   );
 
@@ -115,58 +225,66 @@ class CSS{
     hoverColor: Colors.grey[350],
     shadowColor: Colors.grey[500],
     indicatorColor: Colors.white,
-    selectedRowColor: darkGrey,
+    unselectedWidgetColor: darkGrey,
+
+    dividerColor: darkGrey,
+    highlightColor: darkBlue,
+    hintColor: lightBlue,
+    primaryColorLight: Colors.white,
+    primaryColorDark: Colors.grey[900],
+
     primaryTextTheme: TextTheme(
-      headline1: const TextStyle(
+      headlineLarge: const TextStyle(
         package: 'css',
         color: darkBlue,
         fontFamily: 'Klavika Bold',
         fontSize: 36,
         decoration: TextDecoration.none
       ),
-      headline2: const TextStyle(
-        package: 'css',
-        color: darkBlue,
-        fontFamily: 'Klavika Bold',
-        fontSize: 30,
-        decoration: TextDecoration.none
-      ),
-      headline3: const TextStyle(
+      headlineMedium: const TextStyle(
         package: 'css',
         color: darkBlue,
         fontFamily: 'Klavika Bold',
         fontSize: 24,
         decoration: TextDecoration.none
       ),
-      headline4: const TextStyle(
+      headlineSmall: const TextStyle(
         package: 'css',
         color: darkBlue,
         fontFamily: 'Klavika Bold',
         fontSize: 18,
         decoration: TextDecoration.none
       ),
-      bodyText1: TextStyle(
+      bodyLarge: TextStyle(
         package: 'css',
         color: Colors.grey[900],
         fontFamily: 'Klavika',
         fontSize: 24,
         decoration: TextDecoration.none
       ),
-      bodyText2: TextStyle(
+      bodyMedium: TextStyle(
         package: 'css',
         color: Colors.grey[900],
         fontFamily: 'Klavika',
         fontSize: 18,
         decoration: TextDecoration.none
       ),
-      subtitle1: TextStyle(
+      titleLarge: TextStyle(
+        package: 'css',
+        height: 1.5,
+        color: Colors.grey[900],
+        fontFamily: 'MuesoSans Bold',
+        fontSize: 16,
+        decoration: TextDecoration.none
+      ),
+      titleMedium: TextStyle(
         package: 'css',
         color: Colors.grey[900],
         fontFamily: 'MuesoSans Bold',
         fontSize: 12,
         decoration: TextDecoration.none
       ),
-      subtitle2: TextStyle(
+      titleSmall: TextStyle(
         package: 'css',
         color: Colors.grey[900],
         fontFamily: 'MuesoSans Bold',
