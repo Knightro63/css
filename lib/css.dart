@@ -269,6 +269,13 @@ class CSS{
         fontSize: 18,
         decoration: TextDecoration.none
       ),
+      bodySmall: TextStyle(
+        package: 'css',
+        color: Colors.grey[900],
+        fontFamily: 'Klavika Bold',
+        fontSize: 12,
+        decoration: TextDecoration.none
+      ),
       titleLarge: TextStyle(
         package: 'css',
         height: 1.5,
