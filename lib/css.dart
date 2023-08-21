@@ -221,7 +221,7 @@ class CSS{
     secondaryHeaderColor: lightBlue,
     cardColor: const Color(0xfffdfdfd),
     canvasColor: const Color(0xffdddddd),
-    splashColor: const Color(0xfff3f3f3),
+    splashColor: const Color(0xffeeeeee),
     hoverColor: Colors.grey[350],
     shadowColor: Colors.grey[500],
     indicatorColor: Colors.white,
