@@ -136,7 +136,7 @@ class CSS{
 
     dividerColor: lightGrey,
     highlightColor: lightBlue,
-    hintColor: darkBlue,
+    hintColor: Colors.grey,
     primaryColorDark: Colors.grey[900],
 
     scrollbarTheme: const ScrollbarThemeData(),
@@ -229,7 +229,7 @@ class CSS{
 
     dividerColor: darkGrey,
     highlightColor: darkBlue,
-    hintColor: lightBlue,
+    hintColor: Colors.grey,
     primaryColorLight: Colors.white,
     primaryColorDark: Colors.grey[900],
 
