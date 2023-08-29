@@ -114,9 +114,10 @@ class CSS{
     cardColor: Colors.grey[850],
     canvasColor: Colors.grey[900],
     splashColor: Colors.grey[900],
-    hoverColor: Colors.grey[700],
-    shadowColor: Colors.black,//Colors.grey[750],
     indicatorColor: Colors.grey[850],
+    shadowColor: Colors.black,//Colors.grey[750],
+    hoverColor: Colors.grey[700],
+
     secondaryHeaderColor: lightBlue,
     primaryColorLight: Colors.white,
     unselectedWidgetColor: Colors.grey[800],
@@ -124,6 +125,7 @@ class CSS{
     highlightColor: lightBlue,
     hintColor: Colors.grey,
     primaryColorDark: Colors.grey[900],
+
     scrollbarTheme: const ScrollbarThemeData(),
     primaryTextTheme: const TextTheme(
       titleLarge: TextStyle(
@@ -190,6 +192,27 @@ class CSS{
         fontSize: 12,
         decoration: TextDecoration.none
       ),
+      labelLarge: TextStyle(
+        package: 'css',
+        color: lightBlue,
+        fontFamily: 'Klavika Bold',
+        fontSize: 18,
+        decoration: TextDecoration.none,
+      ),
+      labelMedium: TextStyle(
+        package: 'css',
+        color: lightBlue,
+        fontFamily: 'Klavika',
+        fontSize: 16,
+        decoration: TextDecoration.none,
+      ),
+      labelSmall: TextStyle(
+        package: 'css',
+        color: lightBlue,
+        fontFamily: 'Klavika',
+        fontSize: 10,
+        decoration: TextDecoration.none,
+      ),
       // displayLarge: ,
       // displayMedium: ,
       // displaySmall: ,
@@ -203,19 +226,21 @@ class CSS{
   static ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
     primaryColor: lightBlue,
-    secondaryHeaderColor: lightBlue,
     cardColor: const Color(0xfffdfdfd),
     canvasColor: const Color(0xffdddddd),
-    splashColor: const Color(0xffeeeeee),
-    hoverColor: Colors.grey[350],
-    shadowColor: Colors.grey[500],
     indicatorColor: Colors.white,
+    splashColor: const Color(0xffeeeeee),
+    shadowColor: Colors.grey[500],
+    hoverColor: Colors.grey[350],
+    
+    secondaryHeaderColor: lightBlue,
+    primaryColorLight: Colors.white,
     unselectedWidgetColor: darkGrey,
     dividerColor: darkGrey,
     highlightColor: darkBlue,
     hintColor: Colors.grey,
-    primaryColorLight: Colors.white,
     primaryColorDark: Colors.grey[900],
+
     scrollbarTheme: const ScrollbarThemeData(),
     primaryTextTheme: TextTheme(
       headlineLarge: const TextStyle(
@@ -282,6 +307,27 @@ class CSS{
         fontSize: 10,
         decoration: TextDecoration.none
       ),
+      labelLarge: const TextStyle(
+        package: 'css',
+        color: lightBlue,
+        fontFamily: 'Klavika Bold',
+        fontSize: 18,
+        decoration: TextDecoration.none,
+      ),
+      labelMedium: const TextStyle(
+        package: 'css',
+        color: lightBlue,
+        fontFamily: 'Klavika',
+        fontSize: 16,
+        decoration: TextDecoration.none,
+      ),
+      labelSmall: const TextStyle(
+        package: 'css',
+        color: lightBlue,
+        fontFamily: 'Klavika',
+        fontSize: 10,
+        decoration: TextDecoration.none,
+      ),
     )
   );
 
@@ -291,16 +337,16 @@ class CSS{
     cardColor: pastelYellow,
     canvasColor: sageGreen,
     splashColor: sageGreen,
-    indicatorColor: sageGreen,
+    indicatorColor: pastelYellow,
     shadowColor: forestGreen,
     hoverColor: Colors.grey[100],
 
     secondaryHeaderColor: forestGreen,
+    primaryColorLight: pastelYellow,
     unselectedWidgetColor: sageGreen,
     dividerColor: forestGreen,
     highlightColor: sageGreen,
     hintColor: pastelYellow,
-    primaryColorLight: pastelYellow,
     primaryColorDark: forestGreen,
 
     scrollbarTheme: const ScrollbarThemeData(),
@@ -352,14 +398,14 @@ class CSS{
         package: 'css',
         color: forestGreen,
         fontFamily: 'Klavika',
-        fontSize: 18,
+        fontSize: 16,
         decoration: TextDecoration.none,
       ),
       titleMedium: TextStyle(
           package: 'css',
           color: forestGreen,
           fontFamily: 'Klavika',
-          fontSize: 14,
+          fontSize: 12,
           decoration: TextDecoration.none),
       titleSmall: TextStyle(
           package: 'css',
