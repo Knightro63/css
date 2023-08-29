@@ -288,24 +288,22 @@ class CSS{
   static ThemeData mintTheme = ThemeData(
     brightness: Brightness.light,
     primaryColor: sageGreen,
-    //accentColor: forestGreen,
     cardColor: pastelYellow,
     canvasColor: sageGreen,
-    splashColor: pastelYellow,
+    splashColor: sageGreen,
     indicatorColor: sageGreen,
     shadowColor: forestGreen,
-    //selectedRowColor: sageGreen,
     hoverColor: Colors.grey[100],
-    scrollbarTheme: const ScrollbarThemeData(),
 
-    secondaryHeaderColor: sageGreen,
-    unselectedWidgetColor: darkGrey,
+    secondaryHeaderColor: forestGreen,
+    unselectedWidgetColor: sageGreen,
     dividerColor: forestGreen,
     highlightColor: sageGreen,
     hintColor: pastelYellow,
     primaryColorLight: pastelYellow,
     primaryColorDark: forestGreen,
 
+    scrollbarTheme: const ScrollbarThemeData(),
     primaryTextTheme: const TextTheme(
       displayLarge: TextStyle(
           package: 'css',
