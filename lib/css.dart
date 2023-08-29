@@ -27,6 +27,13 @@ const Color darkGreenT = Color(0x7739ac50);
 const Color lightGreenT = Color(0x9953d16c);
 const Color lightBlueT = Color(0x9906A7E2);
 
+// Mint Theme Colors
+const Color sageGreen = Color(0xFFC3DFB8);
+const Color forestGreen = Color(0xFF355E3B);
+const Color pastelYellow = Color(0xFFFFFFE0);
+
+enum LsiThemes { light, dark, mint }
+
 TextStyle iconStlye = const TextStyle(fontSize: 8, fontFamily: 'MuseoSans Bold',package: 'css',);
 // ThemeData ThemeData({
 //   bool? applyElevationOverlayColor,
@@ -113,32 +120,10 @@ class CSS{
     secondaryHeaderColor: lightBlue,
     primaryColorLight: Colors.white,
     unselectedWidgetColor: Colors.grey[800],
-
-    // colorScheme: ColorScheme(
-    //   brightness: Brightness.dark, 
-    //   primary: primary, 
-    //   onPrimary: onPrimary, 
-    //   secondary: secondary, 
-    //   onSecondary: onSecondary, 
-    //   error: error, 
-    //   onError: onError, 
-    //   background: background, 
-    //   onBackground: onBackground, 
-    //   surface: surface, 
-    //   onSurface: onSurface
-    // ),
-
-    // colorSchemeSeed: ,
-    // dialogBackgroundColor: ,
-    // scaffoldBackgroundColor: ,
-    // disabledColor: ,
-    // focusColor: ,
-
     dividerColor: lightGrey,
     highlightColor: lightBlue,
     hintColor: Colors.grey,
     primaryColorDark: Colors.grey[900],
-
     scrollbarTheme: const ScrollbarThemeData(),
     primaryTextTheme: const TextTheme(
       titleLarge: TextStyle(
@@ -226,13 +211,12 @@ class CSS{
     shadowColor: Colors.grey[500],
     indicatorColor: Colors.white,
     unselectedWidgetColor: darkGrey,
-
     dividerColor: darkGrey,
     highlightColor: darkBlue,
     hintColor: Colors.grey,
     primaryColorLight: Colors.white,
     primaryColorDark: Colors.grey[900],
-
+    scrollbarTheme: const ScrollbarThemeData(),
     primaryTextTheme: TextTheme(
       headlineLarge: const TextStyle(
         package: 'css',
@@ -300,6 +284,115 @@ class CSS{
       ),
     )
   );
+
+  static ThemeData mintTheme = ThemeData(
+    brightness: Brightness.light,
+    primaryColor: sageGreen,
+    //accentColor: forestGreen,
+    cardColor: pastelYellow,
+    canvasColor: sageGreen,
+    splashColor: pastelYellow,
+    indicatorColor: sageGreen,
+    shadowColor: forestGreen,
+    //selectedRowColor: sageGreen,
+    hoverColor: Colors.grey[100],
+    scrollbarTheme: const ScrollbarThemeData(),
+
+    secondaryHeaderColor: sageGreen,
+    unselectedWidgetColor: darkGrey,
+    dividerColor: forestGreen,
+    highlightColor: sageGreen,
+    hintColor: pastelYellow,
+    primaryColorLight: pastelYellow,
+    primaryColorDark: forestGreen,
+
+    primaryTextTheme: const TextTheme(
+      displayLarge: TextStyle(
+          package: 'css',
+          color: forestGreen,
+          fontFamily: 'Klavika Bold',
+          fontSize: 60,
+          decoration: TextDecoration.none),
+      displayMedium: TextStyle(
+          package: 'css',
+          color: forestGreen,
+          fontFamily: 'Klavika Bold',
+          fontSize: 30,
+          decoration: TextDecoration.none),
+      displaySmall: TextStyle(
+          package: 'css',
+          color: forestGreen,
+          fontFamily: 'Klavika Bold',
+          fontSize: 24,
+          decoration: TextDecoration.none),
+      headlineMedium: TextStyle(
+          package: 'css',
+          color: forestGreen,
+          fontFamily: 'Klavika Bold',
+          fontSize: 16,
+          decoration: TextDecoration.none),
+      bodyLarge: TextStyle(
+          package: 'css',
+          color: forestGreen,
+          fontFamily: 'Klavika',
+          fontSize: 20,
+          decoration: TextDecoration.none),
+      bodyMedium: TextStyle(
+          package: 'css',
+          color: forestGreen,
+          fontFamily: 'Klavika',
+          fontSize: 16,
+          decoration: TextDecoration.none),
+      bodySmall: TextStyle(
+        package: 'css',
+        color: forestGreen,
+        fontFamily: 'MuesoSans',
+        fontSize: 12,
+        decoration: TextDecoration.none,
+      ),
+      titleLarge: TextStyle(
+        package: 'css',
+        color: forestGreen,
+        fontFamily: 'Klavika',
+        fontSize: 18,
+        decoration: TextDecoration.none,
+      ),
+      titleMedium: TextStyle(
+          package: 'css',
+          color: forestGreen,
+          fontFamily: 'Klavika',
+          fontSize: 14,
+          decoration: TextDecoration.none),
+      titleSmall: TextStyle(
+          package: 'css',
+          color: forestGreen,
+          fontFamily: 'MuesoSans Bold',
+          fontSize: 10,
+          decoration: TextDecoration.none),
+      labelLarge: TextStyle(
+        package: 'css',
+        color: forestGreen,
+        fontFamily: 'Klavika Bold',
+        fontSize: 18,
+        decoration: TextDecoration.none,
+      ),
+      labelMedium: TextStyle(
+        package: 'css',
+        color: forestGreen,
+        fontFamily: 'Klavika',
+        fontSize: 16,
+        decoration: TextDecoration.none,
+      ),
+      labelSmall: TextStyle(
+        package: 'css',
+        color: forestGreen,
+        fontFamily: 'Klavika',
+        fontSize: 10,
+        decoration: TextDecoration.none,
+      ),
+    )
+  );
+
   static Color responsiveColor(Color color, [double amount = .1]){
     if(amount > 1){
       amount = 1;
