@@ -355,7 +355,7 @@ class CSS{
 
     secondaryHeaderColor: forestGreen,
     primaryColorLight: pastelYellow,
-    unselectedWidgetColor: sageGreen,
+    unselectedWidgetColor: CSS.darken(sageGreen,0.15),
     dividerColor: forestGreen,
     highlightColor: sageGreen,
     hintColor: pastelYellow,
