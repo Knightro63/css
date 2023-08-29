@@ -477,7 +477,22 @@ class CSS{
       return false;
     }
   }
-
+  static ThemeData changeTheme(LsiThemes theme) {
+    switch (theme) {
+      case LsiThemes.dark:
+        return darkTheme;
+      case LsiThemes.mint:
+        return mintTheme;
+      default:
+        return lightTheme;
+    }
+  }
+  static LsiThemes themeFromString(String tempTheme) {
+    for (int i = 0; i < LsiThemes.values.length; i++) {
+      if (LsiThemes.values[i].name == tempTheme) return LsiThemes.values[i];
+    }
+    return LsiThemes.light;
+  }
   static TextStyle defaultTextStyle =
       const TextStyle(fontWeight: FontWeight.w700, fontSize: 32);
 
