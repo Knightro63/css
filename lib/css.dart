@@ -128,6 +128,12 @@ class CSS{
 
     scrollbarTheme: const ScrollbarThemeData(),
     primaryTextTheme: const TextTheme(
+      displayMedium: TextStyle(
+          package: 'css',
+          color: lightGrey,
+          fontFamily: 'Klavika Bold',
+          fontSize: 30,
+          decoration: TextDecoration.none),
       titleLarge: TextStyle(
         package: 'css',
         height: 1.5,
@@ -243,6 +249,12 @@ class CSS{
 
     scrollbarTheme: const ScrollbarThemeData(),
     primaryTextTheme: TextTheme(
+      displayMedium: const TextStyle(
+          package: 'css',
+          color: darkBlue,
+          fontFamily: 'Klavika Bold',
+          fontSize: 30,
+          decoration: TextDecoration.none),
       headlineLarge: const TextStyle(
         package: 'css',
         color: darkBlue,
