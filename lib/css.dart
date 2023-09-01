@@ -32,7 +32,7 @@ const Color sageGreen = Color(0xFFC3DFB8);
 const Color forestGreen = Color(0xFF355E3B);
 const Color pastelYellow = Color(0xFFFFFFE0);
 
-enum LsiThemes { light, dark, mint }
+enum LsiThemes { light, dark, mint, limbitless }
 
 TextStyle iconStlye = const TextStyle(fontSize: 8, fontFamily: 'MuseoSans Bold',package: 'css',);
 // ThemeData ThemeData({
@@ -128,31 +128,42 @@ class CSS{
 
     scrollbarTheme: const ScrollbarThemeData(),
     primaryTextTheme: const TextTheme(
+      displayLarge: TextStyle(
+          package: 'css',
+          color: lightGrey,
+          fontFamily: 'Klavika Bold',
+          fontSize: 60,
+          decoration: TextDecoration.none),
       displayMedium: TextStyle(
           package: 'css',
           color: lightGrey,
           fontFamily: 'Klavika Bold',
           fontSize: 30,
           decoration: TextDecoration.none),
+      displaySmall: TextStyle(
+          package: 'css',
+          color: lightGrey,
+          fontFamily: 'Klavika Bold',
+          fontSize: 24,
+          decoration: TextDecoration.none),
       titleLarge: TextStyle(
         package: 'css',
-        height: 1.5,
         color: lightGrey,
-        fontFamily: 'MuesoSans Bold',
+        fontFamily: 'Klavika',
         fontSize: 16,
         decoration: TextDecoration.none
       ),
       titleMedium: TextStyle(
         package: 'css',
         color: lightGrey,
-        fontFamily: 'MuesoSans Bold',
+        fontFamily: 'Klavika',
         fontSize: 12,
         decoration: TextDecoration.none
       ),
       titleSmall: TextStyle(
         package: 'css',
         color: lightGrey,
-        fontFamily: 'MuesoSans Bold',
+        fontFamily: 'Klavika',
         fontSize: 10,
         decoration: TextDecoration.none
       ),
@@ -160,41 +171,41 @@ class CSS{
         package: 'css',
         color: lightBlue,
         fontFamily: 'Klavika Bold',
-        fontSize: 36,
+        fontSize: 24,
         decoration: TextDecoration.none
       ),
       headlineMedium: TextStyle(
         package: 'css',
         color: lightBlue,
         fontFamily: 'Klavika Bold',
-        fontSize: 24,
+        fontSize: 16,
         decoration: TextDecoration.none
       ),
       headlineSmall: TextStyle(
         package: 'css',
         color: lightBlue,
         fontFamily: 'Klavika Bold',
-        fontSize: 18,
+        fontSize: 12,
         decoration: TextDecoration.none
       ),
       bodyLarge: TextStyle(
         package: 'css',
         color: lightGrey,
-        fontFamily: 'Klavika Bold',
+        fontFamily: 'MuesoSans',
         fontSize: 24,
         decoration: TextDecoration.none
       ),
       bodyMedium: TextStyle(
         package: 'css',
         color: lightGrey,
-        fontFamily: 'Klavika Bold',
+        fontFamily: 'MuesoSans',
         fontSize: 18,
         decoration: TextDecoration.none
       ),
       bodySmall: TextStyle(
         package: 'css',
         color: lightGrey,
-        fontFamily: 'Klavika Bold',
+        fontFamily: 'MuesoSans',
         fontSize: 12,
         decoration: TextDecoration.none
       ),
@@ -208,23 +219,17 @@ class CSS{
       labelMedium: TextStyle(
         package: 'css',
         color: lightBlue,
-        fontFamily: 'Klavika',
+        fontFamily: 'Klavika Bold',
         fontSize: 16,
         decoration: TextDecoration.none,
       ),
       labelSmall: TextStyle(
         package: 'css',
         color: lightBlue,
-        fontFamily: 'Klavika',
+        fontFamily: 'Klavika Bold',
         fontSize: 10,
         decoration: TextDecoration.none,
       ),
-      // displayLarge: ,
-      // displayMedium: ,
-      // displaySmall: ,
-      // labelLarge: ,
-      // labelMedium: ,
-      // labelSmall: ,
     )
   );
 
@@ -249,73 +254,84 @@ class CSS{
 
     scrollbarTheme: const ScrollbarThemeData(),
     primaryTextTheme: TextTheme(
+      displayLarge: const TextStyle(
+          package: 'css',
+          color: darkBlue,
+          fontFamily: 'Klavika Bold',
+          fontSize: 60,
+          decoration: TextDecoration.none),
       displayMedium: const TextStyle(
           package: 'css',
           color: darkBlue,
           fontFamily: 'Klavika Bold',
           fontSize: 30,
           decoration: TextDecoration.none),
+      displaySmall: const TextStyle(
+          package: 'css',
+          color: darkBlue,
+          fontFamily: 'Klavika Bold',
+          fontSize: 24,
+          decoration: TextDecoration.none),
       headlineLarge: const TextStyle(
         package: 'css',
         color: darkBlue,
         fontFamily: 'Klavika Bold',
-        fontSize: 36,
+        fontSize: 24,
         decoration: TextDecoration.none
       ),
       headlineMedium: const TextStyle(
         package: 'css',
         color: darkBlue,
         fontFamily: 'Klavika Bold',
-        fontSize: 24,
+        fontSize: 16,
         decoration: TextDecoration.none
       ),
       headlineSmall: const TextStyle(
         package: 'css',
         color: darkBlue,
         fontFamily: 'Klavika Bold',
-        fontSize: 18,
+        fontSize: 12,
         decoration: TextDecoration.none
       ),
       bodyLarge: TextStyle(
         package: 'css',
         color: Colors.grey[900],
-        fontFamily: 'Klavika',
+        fontFamily: 'MuesoSans',
         fontSize: 24,
         decoration: TextDecoration.none
       ),
       bodyMedium: TextStyle(
         package: 'css',
         color: Colors.grey[900],
-        fontFamily: 'Klavika',
+        fontFamily: 'MuesoSans',
         fontSize: 18,
         decoration: TextDecoration.none
       ),
       bodySmall: TextStyle(
         package: 'css',
         color: Colors.grey[900],
-        fontFamily: 'Klavika Bold',
+        fontFamily: 'MuesoSans',
         fontSize: 12,
         decoration: TextDecoration.none
       ),
       titleLarge: TextStyle(
         package: 'css',
-        height: 1.5,
         color: Colors.grey[900],
-        fontFamily: 'MuesoSans Bold',
+        fontFamily: 'Klavika',
         fontSize: 16,
         decoration: TextDecoration.none
       ),
       titleMedium: TextStyle(
         package: 'css',
         color: Colors.grey[900],
-        fontFamily: 'MuesoSans Bold',
+        fontFamily: 'Klavika',
         fontSize: 12,
         decoration: TextDecoration.none
       ),
       titleSmall: TextStyle(
         package: 'css',
         color: Colors.grey[900],
-        fontFamily: 'MuesoSans Bold',
+        fontFamily: 'Klavika',
         fontSize: 10,
         decoration: TextDecoration.none
       ),
@@ -329,14 +345,14 @@ class CSS{
       labelMedium: const TextStyle(
         package: 'css',
         color: lightBlue,
-        fontFamily: 'Klavika',
+        fontFamily: 'Klavika Bold',
         fontSize: 16,
         decoration: TextDecoration.none,
       ),
       labelSmall: const TextStyle(
         package: 'css',
         color: lightBlue,
-        fontFamily: 'Klavika',
+        fontFamily: 'Klavika Bold',
         fontSize: 10,
         decoration: TextDecoration.none,
       ),
@@ -381,23 +397,38 @@ class CSS{
           fontFamily: 'Klavika Bold',
           fontSize: 24,
           decoration: TextDecoration.none),
+      headlineLarge: TextStyle(
+        package: 'css',
+        color: forestGreen,
+        fontFamily: 'Klavika Bold',
+        fontSize: 24,
+        decoration: TextDecoration.none
+      ),
       headlineMedium: TextStyle(
-          package: 'css',
-          color: forestGreen,
-          fontFamily: 'Klavika Bold',
-          fontSize: 16,
-          decoration: TextDecoration.none),
+        package: 'css',
+        color: forestGreen,
+        fontFamily: 'Klavika Bold',
+        fontSize: 16,
+        decoration: TextDecoration.none
+      ),
+      headlineSmall: TextStyle(
+        package: 'css',
+        color: forestGreen,
+        fontFamily: 'Klavika Bold',
+        fontSize: 12,
+        decoration: TextDecoration.none
+      ),
       bodyLarge: TextStyle(
           package: 'css',
           color: forestGreen,
-          fontFamily: 'Klavika',
-          fontSize: 20,
+          fontFamily: 'MuesoSans',
+          fontSize: 24,
           decoration: TextDecoration.none),
       bodyMedium: TextStyle(
           package: 'css',
           color: forestGreen,
-          fontFamily: 'Klavika',
-          fontSize: 16,
+          fontFamily: 'MuesoSans',
+          fontSize: 18,
           decoration: TextDecoration.none),
       bodySmall: TextStyle(
         package: 'css',
@@ -422,7 +453,7 @@ class CSS{
       titleSmall: TextStyle(
           package: 'css',
           color: forestGreen,
-          fontFamily: 'MuesoSans Bold',
+          fontFamily: 'Klavika',
           fontSize: 10,
           decoration: TextDecoration.none),
       labelLarge: TextStyle(
@@ -435,20 +466,140 @@ class CSS{
       labelMedium: TextStyle(
         package: 'css',
         color: forestGreen,
-        fontFamily: 'Klavika',
+        fontFamily: 'Klavika Bold',
         fontSize: 16,
         decoration: TextDecoration.none,
       ),
       labelSmall: TextStyle(
         package: 'css',
         color: forestGreen,
-        fontFamily: 'Klavika',
+        fontFamily: 'Klavika Bold',
         fontSize: 10,
         decoration: TextDecoration.none,
       ),
     )
   );
 
+  static ThemeData lsiTheme = ThemeData(
+    brightness: Brightness.light,
+    primaryColor: lightGrey,
+    cardColor: Colors.white,
+    canvasColor: lightBlue,
+    splashColor: lightGrey,
+    indicatorColor: Colors.white,
+    shadowColor: darkBlue,
+    hoverColor: Colors.grey[100],
+
+    secondaryHeaderColor: darkBlue,
+    primaryColorLight: Colors.white,
+    unselectedWidgetColor: CSS.darken(lightBlue,0.15),
+    dividerColor: darkBlue,
+    highlightColor: lightBlue,
+    hintColor: Colors.white,
+    primaryColorDark: darkBlue,
+
+    scrollbarTheme: const ScrollbarThemeData(),
+    primaryTextTheme: const TextTheme(
+      displayLarge: TextStyle(
+          package: 'css',
+          color: darkBlue,
+          fontFamily: 'Klavika Bold',
+          fontSize: 60,
+          decoration: TextDecoration.none),
+      displayMedium: TextStyle(
+          package: 'css',
+          color: darkBlue,
+          fontFamily: 'Klavika Bold',
+          fontSize: 30,
+          decoration: TextDecoration.none),
+      displaySmall: TextStyle(
+          package: 'css',
+          color: darkBlue,
+          fontFamily: 'Klavika Bold',
+          fontSize: 24,
+          decoration: TextDecoration.none),
+      headlineLarge: TextStyle(
+        package: 'css',
+        color: darkBlue,
+        fontFamily: 'Klavika Bold',
+        fontSize: 24,
+        decoration: TextDecoration.none
+      ),
+      headlineMedium: TextStyle(
+        package: 'css',
+        color: darkBlue,
+        fontFamily: 'Klavika Bold',
+        fontSize: 16,
+        decoration: TextDecoration.none
+      ),
+      headlineSmall: TextStyle(
+        package: 'css',
+        color: darkBlue,
+        fontFamily: 'Klavika Bold',
+        fontSize: 12,
+        decoration: TextDecoration.none
+      ),
+      bodyLarge: TextStyle(
+          package: 'css',
+          color: darkBlue,
+          fontFamily: 'MuesoSans',
+          fontSize: 24,
+          decoration: TextDecoration.none),
+      bodyMedium: TextStyle(
+          package: 'css',
+          color: darkBlue,
+          fontFamily: 'MuesoSans',
+          fontSize: 18,
+          decoration: TextDecoration.none),
+      bodySmall: TextStyle(
+        package: 'css',
+        color: darkBlue,
+        fontFamily: 'MuesoSans',
+        fontSize: 12,
+        decoration: TextDecoration.none,
+      ),
+      titleLarge: TextStyle(
+        package: 'css',
+        color: darkBlue,
+        fontFamily: 'Klavika',
+        fontSize: 16,
+        decoration: TextDecoration.none,
+      ),
+      titleMedium: TextStyle(
+          package: 'css',
+          color: darkBlue,
+          fontFamily: 'Klavika',
+          fontSize: 12,
+          decoration: TextDecoration.none),
+      titleSmall: TextStyle(
+          package: 'css',
+          color: darkBlue,
+          fontFamily: 'Klavika',
+          fontSize: 10,
+          decoration: TextDecoration.none),
+      labelLarge: TextStyle(
+        package: 'css',
+        color: darkBlue,
+        fontFamily: 'Klavika Bold',
+        fontSize: 18,
+        decoration: TextDecoration.none,
+      ),
+      labelMedium: TextStyle(
+        package: 'css',
+        color: darkBlue,
+        fontFamily: 'Klavika Bold',
+        fontSize: 16,
+        decoration: TextDecoration.none,
+      ),
+      labelSmall: TextStyle(
+        package: 'css',
+        color: darkBlue,
+        fontFamily: 'Klavika Bold',
+        fontSize: 10,
+        decoration: TextDecoration.none,
+      ),
+    )
+  );
   static Color responsiveColor(Color color, [double amount = .1]){
     if(amount > 1){
       amount = 1;
@@ -539,6 +690,8 @@ class CSS{
         return darkTheme;
       case LsiThemes.mint:
         return mintTheme;
+      case LsiThemes.limbitless:
+        return lsiTheme;
       default:
         return lightTheme;
     }
