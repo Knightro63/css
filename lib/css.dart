@@ -32,7 +32,7 @@ const Color sageGreen = Color(0xFFC3DFB8);
 const Color forestGreen = Color(0xFF355E3B);
 const Color pastelYellow = Color(0xFFFFFFE0);
 
-enum LsiThemes { light, dark, mint, limbitless }
+enum LsiThemes { light, dark, mint, limbitless,pink }
 
 TextStyle iconStlye = const TextStyle(fontSize: 8, fontFamily: 'MuseoSans Bold',package: 'css',);
 // ThemeData ThemeData({
@@ -600,6 +600,127 @@ class CSS{
       ),
     )
   );
+  static ThemeData pinkTheme = ThemeData(
+    brightness: Brightness.light,
+    primaryColor: Colors.pink[100],
+    cardColor: Colors.pink[50],
+    canvasColor: Colors.pink[100],
+    splashColor: Colors.pink[100],
+    indicatorColor: Colors.pink[50],
+    shadowColor: Colors.pink[300],
+    hoverColor: Colors.grey[100],
+
+    secondaryHeaderColor: Colors.pink[300],
+    primaryColorLight: Colors.pink[50],
+    unselectedWidgetColor: CSS.darken(Colors.pink[100]!,0.15),
+    dividerColor: Colors.pink[300],
+    highlightColor: Colors.pink[100],
+    hintColor: Colors.pink[50],
+    primaryColorDark: Colors.pink[300],
+
+    scrollbarTheme: const ScrollbarThemeData(),
+    primaryTextTheme: TextTheme(
+      displayLarge: TextStyle(
+          package: 'css',
+          color: Colors.pink[300],
+          fontFamily: 'Klavika Bold',
+          fontSize: 60,
+          decoration: TextDecoration.none),
+      displayMedium: TextStyle(
+          package: 'css',
+          color: Colors.pink[300],
+          fontFamily: 'Klavika Bold',
+          fontSize: 30,
+          decoration: TextDecoration.none),
+      displaySmall: TextStyle(
+          package: 'css',
+          color: Colors.pink[300],
+          fontFamily: 'Klavika Bold',
+          fontSize: 24,
+          decoration: TextDecoration.none),
+      headlineLarge: TextStyle(
+        package: 'css',
+        color: Colors.pink[300],
+        fontFamily: 'Klavika Bold',
+        fontSize: 24,
+        decoration: TextDecoration.none
+      ),
+      headlineMedium: TextStyle(
+        package: 'css',
+        color: Colors.pink[300],
+        fontFamily: 'Klavika Bold',
+        fontSize: 16,
+        decoration: TextDecoration.none
+      ),
+      headlineSmall: TextStyle(
+        package: 'css',
+        color: Colors.pink[300],
+        fontFamily: 'Klavika Bold',
+        fontSize: 12,
+        decoration: TextDecoration.none
+      ),
+      bodyLarge: TextStyle(
+          package: 'css',
+          color: Colors.pink[300],
+          fontFamily: 'MuesoSans',
+          fontSize: 24,
+          decoration: TextDecoration.none),
+      bodyMedium: TextStyle(
+          package: 'css',
+          color: Colors.pink[300],
+          fontFamily: 'MuesoSans',
+          fontSize: 18,
+          decoration: TextDecoration.none),
+      bodySmall: TextStyle(
+        package: 'css',
+        color: Colors.pink[300],
+        fontFamily: 'MuesoSans',
+        fontSize: 12,
+        decoration: TextDecoration.none,
+      ),
+      titleLarge: TextStyle(
+        package: 'css',
+        color: Colors.pink[300],
+        fontFamily: 'Klavika',
+        fontSize: 16,
+        decoration: TextDecoration.none,
+      ),
+      titleMedium: TextStyle(
+          package: 'css',
+          color: Colors.pink[300],
+          fontFamily: 'Klavika',
+          fontSize: 12,
+          decoration: TextDecoration.none),
+      titleSmall: TextStyle(
+          package: 'css',
+          color: Colors.pink[300],
+          fontFamily: 'Klavika',
+          fontSize: 10,
+          decoration: TextDecoration.none),
+      labelLarge: TextStyle(
+        package: 'css',
+        color: Colors.pink[300],
+        fontFamily: 'Klavika Bold',
+        fontSize: 18,
+        decoration: TextDecoration.none,
+      ),
+      labelMedium: TextStyle(
+        package: 'css',
+        color: Colors.pink[300],
+        fontFamily: 'Klavika Bold',
+        fontSize: 16,
+        decoration: TextDecoration.none,
+      ),
+      labelSmall: TextStyle(
+        package: 'css',
+        color: Colors.pink[300],
+        fontFamily: 'Klavika Bold',
+        fontSize: 10,
+        decoration: TextDecoration.none,
+      ),
+    )
+  );
+
   static Color responsiveColor(Color color, [double amount = .1]){
     if(amount > 1){
       amount = 1;
@@ -692,6 +813,8 @@ class CSS{
         return mintTheme;
       case LsiThemes.limbitless:
         return lsiTheme;
+      case LsiThemes.pink:
+        return pinkTheme;
       default:
         return lightTheme;
     }
