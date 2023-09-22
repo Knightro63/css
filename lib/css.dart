@@ -32,7 +32,7 @@ const Color sageGreen = Color(0xFFC3DFB8);
 const Color forestGreen = Color(0xFF355E3B);
 const Color pastelYellow = Color(0xFFFFFFE0);
 
-enum LsiThemes { light, dark, mint, limbitless,pink }
+enum LsiThemes {light,dark,mint,limbitless,pink}
 
 TextStyle iconStlye = const TextStyle(fontSize: 8, fontFamily: 'MuseoSans Bold',package: 'css',);
 // ThemeData ThemeData({
@@ -108,6 +108,126 @@ TextStyle iconStlye = const TextStyle(fontSize: 8, fontFamily: 'MuseoSans Bold',
 //   AndroidOverscrollIndicator? androidOverscrollIndicator,
 // })
 class CSS{
+  static ThemeData hallowTheme = ThemeData(
+    brightness: Brightness.dark,
+    primaryColor: Colors.orange[600],
+    cardColor: Colors.grey[850],
+    canvasColor: Colors.grey[900],
+    splashColor: Colors.grey[900],
+    indicatorColor: Colors.grey[850],//Colors.orange[600],
+    shadowColor: Colors.black,//Colors.orange[600],
+    hoverColor: Colors.orange[50],
+
+    secondaryHeaderColor: Colors.orange[600],
+    primaryColorLight: Colors.black,
+    unselectedWidgetColor: CSS.darken(Colors.orange[900]!,0.15),
+    dividerColor: Colors.black,
+    highlightColor: Colors.orange[600],
+    hintColor: Colors.black,
+    primaryColorDark: Colors.orange[900],
+
+    scrollbarTheme: const ScrollbarThemeData(),
+    primaryTextTheme: TextTheme(
+      displayLarge: TextStyle(
+          package: 'css',
+          color: Colors.orange[600],
+          fontFamily: 'Klavika Bold',
+          fontSize: 60,
+          decoration: TextDecoration.none),
+      displayMedium: TextStyle(
+          package: 'css',
+          color: Colors.orange[600],
+          fontFamily: 'Klavika Bold',
+          fontSize: 30,
+          decoration: TextDecoration.none),
+      displaySmall: TextStyle(
+          package: 'css',
+          color: Colors.orange[600],
+          fontFamily: 'Klavika Bold',
+          fontSize: 24,
+          decoration: TextDecoration.none),
+      headlineLarge: TextStyle(
+        package: 'css',
+        color: Colors.orange[600],
+        fontFamily: 'Klavika Bold',
+        fontSize: 24,
+        decoration: TextDecoration.none
+      ),
+      headlineMedium: TextStyle(
+        package: 'css',
+        color: Colors.orange[600],
+        fontFamily: 'Klavika Bold',
+        fontSize: 16,
+        decoration: TextDecoration.none
+      ),
+      headlineSmall: TextStyle(
+        package: 'css',
+        color: Colors.orange[600],
+        fontFamily: 'Klavika Bold',
+        fontSize: 12,
+        decoration: TextDecoration.none
+      ),
+      bodyLarge: TextStyle(
+          package: 'css',
+          color: Colors.orange[600],
+          fontFamily: 'MuesoSans',
+          fontSize: 24,
+          decoration: TextDecoration.none),
+      bodyMedium: TextStyle(
+          package: 'css',
+          color: Colors.orange[600],
+          fontFamily: 'MuesoSans',
+          fontSize: 18,
+          decoration: TextDecoration.none),
+      bodySmall: TextStyle(
+        package: 'css',
+        color: Colors.orange[600],
+        fontFamily: 'MuesoSans',
+        fontSize: 12,
+        decoration: TextDecoration.none,
+      ),
+      titleLarge: TextStyle(
+        package: 'css',
+        color: Colors.orange[600],
+        fontFamily: 'Klavika',
+        fontSize: 16,
+        decoration: TextDecoration.none,
+      ),
+      titleMedium: TextStyle(
+          package: 'css',
+          color: Colors.orange[600],
+          fontFamily: 'Klavika',
+          fontSize: 12,
+          decoration: TextDecoration.none),
+      titleSmall: TextStyle(
+          package: 'css',
+          color: Colors.orange[600],
+          fontFamily: 'Klavika',
+          fontSize: 10,
+          decoration: TextDecoration.none),
+      labelLarge: TextStyle(
+        package: 'css',
+        color: Colors.orange[600],
+        fontFamily: 'Klavika Bold',
+        fontSize: 18,
+        decoration: TextDecoration.none,
+      ),
+      labelMedium: TextStyle(
+        package: 'css',
+        color: Colors.orange[600],
+        fontFamily: 'Klavika Bold',
+        fontSize: 16,
+        decoration: TextDecoration.none,
+      ),
+      labelSmall: TextStyle(
+        package: 'css',
+        color: Colors.orange[600],
+        fontFamily: 'Klavika Bold',
+        fontSize: 10,
+        decoration: TextDecoration.none,
+      ),
+    )
+  );
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
     primaryColor: darkBlue,
@@ -816,7 +936,15 @@ class CSS{
       case LsiThemes.pink:
         return pinkTheme;
       default:
-        return lightTheme;
+        DateTime curDate = DateTime.now();
+        DateTime halStart = DateTime(curDate.year,10,24);
+
+        if(curDate.isBefore(halStart.add(const Duration(days: 7))) && DateTime.now().isAfter(halStart)){
+          return hallowTheme;
+        }
+        else{
+         return lightTheme;
+        }
     }
   }
   static LsiThemes themeFromString(String tempTheme) {
