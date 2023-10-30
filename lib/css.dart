@@ -926,6 +926,13 @@ class CSS{
     }
   }
   static ThemeData changeTheme(LsiThemes theme) {
+    DateTime curDate = DateTime.now();
+    DateTime halStart = DateTime(curDate.year,10,24);
+
+    if(curDate.isBefore(halStart.add(const Duration(days: 8))) && DateTime.now().isAfter(halStart)){
+      return hallowTheme;
+    }
+
     switch (theme) {
       case LsiThemes.dark:
         return darkTheme;
@@ -936,15 +943,7 @@ class CSS{
       case LsiThemes.pink:
         return pinkTheme;
       default:
-        DateTime curDate = DateTime.now();
-        DateTime halStart = DateTime(curDate.year,10,24);
-
-        if(curDate.isBefore(halStart.add(const Duration(days: 7))) && DateTime.now().isAfter(halStart)){
-          return hallowTheme;
-        }
-        else{
-         return lightTheme;
-        }
+        return lightTheme;
     }
   }
   static LsiThemes themeFromString(String tempTheme) {
