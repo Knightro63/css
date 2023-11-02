@@ -32,7 +32,7 @@ const Color sageGreen = Color(0xFFC3DFB8);
 const Color forestGreen = Color(0xFF355E3B);
 const Color pastelYellow = Color(0xFFFFFFE0);
 
-enum LsiThemes {light,dark,mint,limbitless,pink}
+enum LsiThemes {light,dark,mint,limbitless,pink,halloween}
 
 TextStyle iconStlye = const TextStyle(fontSize: 8, fontFamily: 'MuseoSans Bold',package: 'css',);
 // ThemeData ThemeData({
@@ -47,10 +47,8 @@ TextStyle iconStlye = const TextStyle(fontSize: 8, fontFamily: 'MuseoSans Bold',
 //   InteractiveInkFeatureFactory? splashFactory,
 //   bool? useMaterial3,
 //   VisualDensity? visualDensity,
-
 //   ColorScheme? colorScheme,
 //   MaterialColor? primarySwatch,
-
 //   String? fontFamily,
 //   List<String>? fontFamilyFallback,
 //   String? package,
@@ -941,6 +939,8 @@ class CSS{
       case LsiThemes.limbitless:
         return lsiTheme;
       case LsiThemes.pink:
+        return pinkTheme;
+      case LsiThemes.halloween:
         return pinkTheme;
       default:
         return lightTheme;
