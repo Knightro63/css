@@ -941,7 +941,7 @@ class CSS{
       case LsiThemes.pink:
         return pinkTheme;
       case LsiThemes.halloween:
-        return pinkTheme;
+        return hallowTheme;
       default:
         return lightTheme;
     }
