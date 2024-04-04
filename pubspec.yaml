@@ -1,7 +1,7 @@
 name: css
 description: A new Flutter package project.
 version: 1.0.0
-homepage:
+homepage: https://github.com/Knightro63/css
 publish_to: none
 
 environment:
@@ -11,34 +11,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-
-# The following section is specific to Flutter packages.
-flutter:
-  fonts:
-    - family: MuseoSans lite
-      fonts:
-        - asset: fonts/MuseoSans-300.otf
-          weight: 300
-    - family: MuseoSans
-      fonts:
-        - asset: fonts/MuseoSans_500.otf
-          weight: 500
-    - family: MuseoSans Bold
-      fonts:
-        - asset: fonts/MuseoSans_700.otf
-          weight: 700
-    - family: Klavika
-      fonts:
-        - asset: fonts/Klavika-Regular.otf
-    - family: Klavika Bold
-      fonts:
-        - asset: fonts/Klavika-Bold.otf
-    - family:  MyFlutterApp
-      fonts:
-       - asset: fonts/MyFlutterApp.ttf
+  
 
